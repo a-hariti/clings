@@ -1,0 +1,11 @@
+-Wall
+-Wextra
+-Werror
+-Wpedantic
+-Wshadow
+-Wformat=2
+-Wundef
+-g
+-fsanitize=address,undefined
+-I
+include

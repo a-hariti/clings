@@ -1,0 +1,272 @@
+[
+  {
+    "name": "00_intro/start",
+    "path": "exercises/00_intro/00_intro.c",
+    "description": "Entry points and return types."
+  },
+  {
+    "name": "00_intro/comments",
+    "path": "exercises/00_intro/01_comments.c",
+    "description": "Fix the nested comments."
+  },
+  {
+    "name": "01_variables/declaration",
+    "path": "exercises/01_variables/01_declaration.c",
+    "description": "Fix the missing declaration."
+  },
+  {
+    "name": "01_variables/initialization",
+    "path": "exercises/01_variables/02_initialization.c",
+    "description": "Initialize the variable before use."
+  },
+  {
+    "name": "01_variables/const",
+    "path": "exercises/01_variables/03_const.c",
+    "description": "Ensure const correctness."
+  },
+  {
+    "name": "02_types/overflow",
+    "path": "exercises/02_types/01_overflow.c",
+    "description": "Handle integer overflow."
+  },
+  {
+    "name": "02_types/casting",
+    "path": "exercises/02_types/02_casting.c",
+    "description": "Fix the integer division bug."
+  },
+  {
+    "name": "03_fixed_width_ints/int_types",
+    "path": "exercises/03_fixed_width_ints/01_int_types.c",
+    "description": "Use fixed-width integers for portability."
+  },
+  {
+    "name": "03_fixed_width_ints/limits",
+    "path": "exercises/03_fixed_width_ints/02_limits.c",
+    "description": "Use standard limit macros (e.g., UINT8_MAX)."
+  },
+  {
+    "name": "04_string_literals/printing",
+    "path": "exercises/04_string_literals/01_printing.c",
+    "description": "Print a string literal."
+  },
+  {
+    "name": "04_string_literals/assignment",
+    "path": "exercises/04_string_literals/02_assignment.c",
+    "description": "Assign a string literal to a pointer."
+  },
+  {
+    "name": "05_simple_structs/definition",
+    "path": "exercises/05_simple_structs/01_definition.c",
+    "description": "Define and initialize a simple struct."
+  },
+  {
+    "name": "05_simple_structs/access",
+    "path": "exercises/05_simple_structs/02_access.c",
+    "description": "Access struct members using the dot operator."
+  },
+  {
+    "name": "06_enums_typedefs/enum_def",
+    "path": "exercises/06_enums_typedefs/01_enum_def.c",
+    "description": "Define and use an enumeration."
+  },
+  {
+    "name": "06_enums_typedefs/typedef_struct",
+    "path": "exercises/06_enums_typedefs/02_typedef_struct.c",
+    "description": "Use typedef to simplify struct usage."
+  },
+  {
+    "name": "07_control_flow/switch_fallthrough",
+    "path": "exercises/07_control_flow/01_switch_fallthrough.c",
+    "description": "Fix the accidental switch fallthrough."
+  },
+  {
+    "name": "07_control_flow/loops",
+    "path": "exercises/07_control_flow/02_loops.c",
+    "description": "Fix the loop scope issue."
+  },
+  {
+    "name": "08_functions/prototypes",
+    "path": "exercises/08_functions/01_prototypes.c",
+    "description": "Add the missing function prototype."
+  },
+  {
+    "name": "08_functions/pass_by_value",
+    "path": "exercises/08_functions/02_pass_by_value.c",
+    "description": "Understand pass-by-value vs pass-by-reference."
+  },
+  {
+    "name": "09_pointers/address_of",
+    "path": "exercises/09_pointers/01_address_of.c",
+    "description": "Assign the address, not the value."
+  },
+  {
+    "name": "09_pointers/deref",
+    "path": "exercises/09_pointers/02_deref.c",
+    "description": "Modify data through a pointer."
+  },
+  {
+    "name": "09_pointers/const_pointers",
+    "path": "exercises/09_pointers/03_const_pointers.c",
+    "description": "Understand const int* vs int *const."
+  },
+  {
+    "name": "10_ptr_structs/dot_arrow",
+    "path": "exercises/10_ptr_structs/01_dot_arrow.c",
+    "description": "Use the correct operator for struct pointers."
+  },
+  {
+    "name": "10_ptr_structs/padding",
+    "path": "exercises/10_ptr_structs/02_padding.c",
+    "description": "Optimize struct layout."
+  },
+  {
+    "name": "11_arrays/decay",
+    "path": "exercises/11_arrays/01_decay.c",
+    "description": "Fix the array size calculation (array decay)."
+  },
+  {
+    "name": "11_arrays/out_of_bounds",
+    "path": "exercises/11_arrays/02_out_of_bounds.c",
+    "description": "Fix the off-by-one error."
+  },
+  {
+    "name": "12_pointer_arithmetic/increment",
+    "path": "exercises/12_pointer_arithmetic/01_increment.c",
+    "description": "Iterate using pointer increment."
+  },
+  {
+    "name": "12_pointer_arithmetic/distance",
+    "path": "exercises/12_pointer_arithmetic/02_distance.c",
+    "description": "Calculate distance between pointers."
+  },
+  {
+    "name": "13_string_manipulation/terminator",
+    "path": "exercises/13_string_manipulation/01_terminator.c",
+    "description": "Ensure the string is null-terminated."
+  },
+  {
+    "name": "13_string_manipulation/string_libs",
+    "path": "exercises/13_string_manipulation/02_string_libs.c",
+    "description": "Use string manipulation functions safely."
+  },
+  {
+    "name": "14_malloc_free/heap_alloc",
+    "path": "exercises/14_malloc_free/01_heap_alloc.c",
+    "description": "Allocate memory before writing to it."
+  },
+  {
+    "name": "14_malloc_free/memory_leak",
+    "path": "exercises/14_malloc_free/02_memory_leak.c",
+    "description": "Free the allocated memory."
+  },
+  {
+    "name": "15_realloc/resize",
+    "path": "exercises/15_realloc/01_resize.c",
+    "description": "Handle realloc pointer movement correctly."
+  },
+  {
+    "name": "15_realloc/flexible_array",
+    "path": "exercises/15_realloc/02_flexible_array.c",
+    "description": "Use Flexible Array Members (FAMs) for variable-length structs."
+  },
+  {
+    "name": "16_double_pointers/modify_ptr",
+    "path": "exercises/16_double_pointers/01_modify_ptr.c",
+    "description": "Allocate memory for the caller using double pointers."
+  },
+  {
+    "name": "16_double_pointers/2d_arrays",
+    "path": "exercises/16_double_pointers/02_2d_arrays.c",
+    "description": "Allocate and free a 2D array."
+  },
+  {
+    "name": "17_command_line_args/argc_argv",
+    "path": "exercises/17_command_line_args/01_argc_argv.c",
+    "description": "Read command line arguments."
+  },
+  {
+    "name": "18_macros/syntax",
+    "path": "exercises/18_macros/01_syntax.c",
+    "description": "Fix macro operator precedence."
+  },
+  {
+    "name": "18_macros/side_effects",
+    "path": "exercises/18_macros/02_side_effects.c",
+    "description": "Prevent double evaluation in macros."
+  },
+  {
+    "name": "19_preprocessor/ifdef",
+    "path": "exercises/19_preprocessor/01_ifdef.c",
+    "description": "Use conditional compilation."
+  },
+  {
+    "name": "19_preprocessor/include_guards",
+    "path": "exercises/19_preprocessor/02_include_guards.c",
+    "description": "Prevent multiple inclusion of headers."
+  },
+  {
+    "name": "20_files/fopen",
+    "path": "exercises/20_files/01_fopen.c",
+    "description": "Check for file opening errors."
+  },
+  {
+    "name": "20_files/binary_io",
+    "path": "exercises/20_files/02_binary_io.c",
+    "description": "Read and write binary data."
+  },
+  {
+    "name": "21_unions_bitfields/union_type",
+    "path": "exercises/21_unions_bitfields/01_union_type.c",
+    "description": "Understand union memory sharing."
+  },
+  {
+    "name": "21_unions_bitfields/bitmasks",
+    "path": "exercises/21_unions_bitfields/02_bitmasks.c",
+    "description": "Manipulate specific bits."
+  },
+  {
+    "name": "22_linkage/static",
+    "path": "exercises/22_linkage/01_static.c",
+    "description": "Fix the linkage error using static."
+  },
+  {
+    "name": "22_linkage/persistence",
+    "path": "exercises/22_linkage/02_persistence.c",
+    "description": "Use a static local variable."
+  },
+  {
+    "name": "22_linkage/extern",
+    "path": "exercises/22_linkage/03_extern.c",
+    "description": "Declare an external variable."
+  },
+  {
+    "name": "23_function_pointers/callback",
+    "path": "exercises/23_function_pointers/01_callback.c",
+    "description": "Implement a map function."
+  },
+  {
+    "name": "23_function_pointers/qsort",
+    "path": "exercises/23_function_pointers/02_qsort.c",
+    "description": "Sort structs using qsort."
+  },
+  {
+    "name": "23_function_pointers/void_pointer",
+    "path": "exercises/23_function_pointers/03_void_pointer.c",
+    "description": "Use void* for generic data handling."
+  },
+  {
+    "name": "24_variadic_functions/sum",
+    "path": "exercises/24_variadic_functions/01_sum.c",
+    "description": "Implement a variadic sum function."
+  },
+  {
+    "name": "25_undefined_behavior/dangling",
+    "path": "exercises/25_undefined_behavior/01_dangling.c",
+    "description": "Avoid returning stack pointers."
+  },
+  {
+    "name": "25_undefined_behavior/use_after_free",
+    "path": "exercises/25_undefined_behavior/02_use_after_free.c",
+    "description": "Don't touch memory after free."
+  }
+]

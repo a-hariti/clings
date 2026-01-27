@@ -1,0 +1,12 @@
+BasedOnStyle: LLVM
+IndentWidth: 4
+AllowShortFunctionsOnASingleLine: None
+ColumnLimit: 120
+SortIncludes: true
+IncludeCategories:
+  - Regex: '^<.*>'
+    Priority: 1
+  - Regex: '^\".*\"'
+    Priority: 2
+# PointerAlignment: Left
+DerivePointerAlignment: false

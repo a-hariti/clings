@@ -1,0 +1,5 @@
+build/
+.c-lings-state.txt
+__pycache__/
+
+todo.md
