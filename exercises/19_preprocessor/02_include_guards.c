@@ -2,8 +2,6 @@
 #include "clings.h"
 
 /*
- * Exercise: 02_include_guards.c
- *
  * Header files often contain definitions like structs or enums.
  * If a header is included twice in the same C file, it can cause
  * redefinition errors. To prevent this, we use "include guards".

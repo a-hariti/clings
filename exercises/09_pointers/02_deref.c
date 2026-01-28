@@ -2,8 +2,6 @@
 #include "clings.h"
 
 /*
- * C-lings: 05_pointers/02_deref.c
- *
  * To access or modify the value stored at a memory address held by a pointer,
  * use the dereference operator (*).
  *
