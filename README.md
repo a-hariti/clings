@@ -3,7 +3,7 @@
 Small C exercises to get you used to reading and writing C code, inspired by [Rustlings](https://github.com/rust-lang/rustlings) 🦀.
 
 <p align="center">
-    <img src="./assets/screenshot.png" alt="Screenshot" width="600">
+    <img src="./assets/screenshot.png" alt="Screenshot" width="800">
 </p>
 
 ## Recommended Resource
