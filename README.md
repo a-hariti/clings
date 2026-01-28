@@ -2,6 +2,10 @@
 
 Small C exercises to get you used to reading and writing C code, inspired by [Rustlings](https://github.com/rust-lang/rustlings) 🦀.
 
+<p align="center">
+    <img src="./assets/screenshot.png" alt="Screenshot" width="600">
+</p>
+
 ## Recommended Resource
 
 For a comprehensive and friendly guide to C, I recommend **[Beej's Guide to C Programming](https://beej.us/guide/bgc/)**.
