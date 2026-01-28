@@ -208,7 +208,16 @@ def run_exercise_command(exercise):
         if isinstance(exercise_cflags, list):
             exercise_cflags = " ".join(exercise_cflags)
         cmd.append(f"EXERCISE_CFLAGS={exercise_cflags}")
-    result = subprocess.run(cmd, capture_output=True, text=True)
+    env = os.environ.copy()
+    env.setdefault(
+        "ASAN_OPTIONS",
+        "abort_on_error=1:halt_on_error=1:detect_leaks=0:print_summary=1:verbosity=0",
+    )
+    env.setdefault(
+        "UBSAN_OPTIONS",
+        "halt_on_error=1:print_summary=1:verbosity=0",
+    )
+    result = subprocess.run(cmd, capture_output=True, text=True, env=env)
     return result
 
 
