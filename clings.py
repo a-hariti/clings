@@ -221,6 +221,27 @@ def run_exercise_command(exercise):
     return result
 
 
+def compact_sanitizer_output(text):
+    if not text:
+        return text
+    if "AddressSanitizer" not in text and "UndefinedBehaviorSanitizer" not in text:
+        return text
+    lines = text.splitlines()
+    keep = []
+    for line in lines:
+        if "runtime error:" in line:
+            keep.append(line)
+        elif "ERROR: AddressSanitizer" in line:
+            keep.append(line)
+        elif line.startswith("SUMMARY:"):
+            keep.append(line)
+        elif "UndefinedBehaviorSanitizer:" in line:
+            keep.append(line)
+    if keep:
+        return "\n".join(keep)
+    return text
+
+
 def get_watch_files(exercise_path):
     directory = os.path.dirname(exercise_path)
     base_name = os.path.splitext(os.path.basename(exercise_path))[0]
@@ -272,7 +293,7 @@ def watch_exercise(exercise, exercises, passed):
             if result.stdout:
                 print(result.stdout)
             if result.stderr:
-                print(result.stderr)
+                print(compact_sanitizer_output(result.stderr))
             print(f"\n{SGR_BOLD}[l]{SGR_RESET} list | {SGR_BOLD}[q]{SGR_RESET} quit")
             print(f"{SGR_BOLD_BLACK}(Watching for changes...){SGR_RESET}")
 
