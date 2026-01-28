@@ -27,6 +27,7 @@ SGR_BOLD_GREEN = ESC + "[1;32m"
 SGR_BOLD_YELLOW = ESC + "[1;33m"
 SGR_BOLD_RED = ESC + "[1;31m"
 SGR_BOLD_BLACK = ESC + "[1;30m"
+SGR_BLACK = ESC + "[30m"
 
 
 def enter_screen():
@@ -268,6 +269,10 @@ def watch_exercise(exercise, exercises, passed):
 
         print(f"{SGR_BOLD}🔄 Compiling...{SGR_RESET}")
         result = run_exercise_command(exercise)
+        # Clear the compiling line so it doesn't linger above output.
+        if os.name != "nt":
+            sys.stdout.write("\033[1A\r\033[K")
+            sys.stdout.flush()
 
         if result.returncode == 0:
             print(f"{SGR_BOLD_GREEN}✅ PASSED{SGR_RESET}\n")
@@ -295,7 +300,7 @@ def watch_exercise(exercise, exercises, passed):
             if result.stderr:
                 print(compact_sanitizer_output(result.stderr))
             print(f"\n{SGR_BOLD}[l]{SGR_RESET} list | {SGR_BOLD}[q]{SGR_RESET} quit")
-            print(f"{SGR_BOLD_BLACK}(Watching for changes...){SGR_RESET}")
+            print(f"\n{SGR_BLACK}Watching for changes...{SGR_RESET}")
 
         fd = sys.stdin.fileno()
         old_settings = termios.tcgetattr(fd)
