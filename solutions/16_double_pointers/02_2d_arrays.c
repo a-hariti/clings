@@ -46,7 +46,7 @@ int main(void) {
     int **matrix = allocate_matrix(rows, cols);
     cling_assert(matrix != NULL, "allocate_matrix should return a non NULL pointer ");
 
-    cling_assert(ACTIVE_ALLOCATIONS == NUM_ALLOCATIONS, "Matrix is fully allocated");
+    check_int_msg(ACTIVE_ALLOCATIONS, NUM_ALLOCATIONS, "Matrix is fully allocated");
 
     // This works
     fill_matrix(matrix, rows, cols, 0);
@@ -54,7 +54,7 @@ int main(void) {
     // Clean up
     free_matrix(matrix, rows);
 
-    cling_assert(ACTIVE_ALLOCATIONS == 0, "All allocations should be freed");
+    check_int_msg(ACTIVE_ALLOCATIONS, 0, "All allocations should be freed");
 
     return 0;
 }

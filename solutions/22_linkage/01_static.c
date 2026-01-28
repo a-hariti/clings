@@ -22,7 +22,7 @@ int main(void) {
 
     printf("The secret code is: %d\n", code);
 
-    cling_assert(code == 42, "The secret code should be 42");
+    check_int_msg(code, 42, "The secret code should be 42");
 
     return 0;
 }

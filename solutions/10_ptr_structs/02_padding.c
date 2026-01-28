@@ -25,7 +25,7 @@ int main(void) {
     printf("Size of struct OptimizedMe: %zu\n", sizeof(struct OptimizedMe));
 
     // Reordered the members so that the size is 16 bytes.
-    check_int((int)sizeof(struct OptimizedMe), 16);
+    check_size_msg(sizeof(struct OptimizedMe), 16, "Struct should be 16 bytes after reordering");
 
     return 0;
 }

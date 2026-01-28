@@ -16,7 +16,7 @@ int main(void) {
     /* Using [] lets the compiler automatically size the array to 6 bytes */
     char my_string[] = "Hello";
 
-    check_int((int)strlen(my_string), 5);
+    check_size_msg(strlen(my_string), 5, "String length should be 5");
 
     return 0;
 }

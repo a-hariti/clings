@@ -17,8 +17,8 @@ enum Status { STATUS_OK, STATUS_ERROR, STATUS_PENDING };
 int main(void) {
     enum Status s = STATUS_PENDING;
 
-    check_int((int)s, 2);
-    cling_assert(s == STATUS_PENDING, "Status should be PENDING");
+    check_eq_msg(s, 2, "STATUS_PENDING should map to 2");
+    check_eq_msg(s, STATUS_PENDING, "Status should be PENDING");
 
     return 0;
 }

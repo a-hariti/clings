@@ -15,7 +15,7 @@ int main(void) {
 
     cling_assert(message != NULL, "The message pointer should not be NULL.");
     if (message != NULL) {
-        cling_assert(strcmp(message, "C-lings") == 0, "The message should be 'C-lings'.");
+        check_str_msg(message, "C-lings", "The message should be 'C-lings'.");
     }
 
     return 0;

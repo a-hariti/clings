@@ -36,7 +36,7 @@ int main(void) {
     // Use sizeof(Student) as the size and 1 as the count.
     size_t n_items_written = 0;
 
-    cling_assert(n_items_written == 1, "fwrite should write one student to file");
+    check_size_msg(n_items_written, 1, "fwrite should write one student to file");
 
     fclose(out);
 
@@ -51,14 +51,14 @@ int main(void) {
     // TODO: Read the data from the file into s2 using fread.
     size_t n_items_read = 0;
 
-    cling_assert(n_items_read == 1, "fread should read one student from file");
+    check_size_msg(n_items_read, 1, "fread should read one student from file");
 
     fclose(in);
 
     // Verify
-    cling_assert(s2.id == 1, "s2 ID should be 1");
-    cling_assert(strcmp(s2.name, "Alice") == 0, "Name should be Alice");
-    cling_assert(s2.score == 95.5f, "Score should be 95.5");
+    check_int_msg(s2.id, 1, "s2 ID should be 1");
+    check_str_msg(s2.name, "Alice", "Name should be Alice");
+    check_float_msg(s2.score, 95.5f, "Score should be 95.5");
 
     // Clean up
     remove(filename);

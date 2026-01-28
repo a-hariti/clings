@@ -21,7 +21,7 @@ int main(void) {
     // This will cause a compiler error if 'level_difficulty' is not declared
     printf("Current difficulty: %d\n", level_difficulty);
 
-    cling_assert(level_difficulty == 10, "Should be able to read the defined value");
+    check_int_msg(level_difficulty, 10, "Should be able to read the defined value");
 
     level_difficulty = 20;
     check_int(level_difficulty, 20);

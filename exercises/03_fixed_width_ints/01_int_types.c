@@ -13,7 +13,7 @@ int main(void) {
 
     // This assertion checks the size of your type.
     // On most systems, sizeof returns bytes (1 byte = 8 bits).
-    cling_assert(sizeof(timestamp) == 8, "Timestamp must be 64 bits wide!");
+    check_size_msg(sizeof(timestamp), 8, "Timestamp must be 64 bits wide!");
 
     // Check that it can hold a value larger than 32-bit max
     // (We cast to avoid compiler warnings in the broken version)

@@ -19,7 +19,7 @@ int main(void) {
     feature_enabled = 1;
 #endif
 
-    cling_assert(feature_enabled == 1, "Feature should be enabled using ENABLE_FEATURE macro!");
+    check_int_msg(feature_enabled, 1, "Feature should be enabled using ENABLE_FEATURE macro!");
 
     if (feature_enabled) {
         printf("Feature is ENABLED. Good job!\n");

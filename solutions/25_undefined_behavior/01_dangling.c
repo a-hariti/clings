@@ -23,7 +23,7 @@ int *get_value(void) {
 int main(void) {
     int *ptr = get_value();
 
-    cling_assert(*ptr == 42, "The pointer should point to the value 42");
+    check_int_msg(*ptr, 42, "The pointer should point to the value 42");
 
     return 0;
 }

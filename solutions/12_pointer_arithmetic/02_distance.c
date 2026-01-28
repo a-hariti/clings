@@ -18,7 +18,7 @@ int main(void) {
     // Calculate how many elements are between end and start.
     ptrdiff_t diff = end - start;
 
-    check_int((int)diff, 4);
+    check_ptrdiff_msg(diff, 4, "Distance should be 4 elements");
 
     return 0;
 }

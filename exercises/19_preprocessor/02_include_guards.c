@@ -15,7 +15,6 @@
  */
 
 #include "02_include_guards.h"
-#include "02_include_guards.h"
 
 int main(void) {
     struct Point p = {10, 20};

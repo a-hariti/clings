@@ -16,9 +16,9 @@ int main(void) {
     free(numbers);
     numbers = NULL;
 
-    cling_assert(ACTIVE_ALLOCATIONS == 0, "No active allocations should remain");
+    check_int_msg(ACTIVE_ALLOCATIONS, 0, "No active allocations should remain");
     // it's a good practice to set pointers to NULL after freeing them
-    cling_assert(numbers == NULL, "numbers pointer should be null");
+    check_ptr_msg(numbers, NULL, "numbers pointer should be null");
 
     return 0;
 }

@@ -13,6 +13,7 @@ EXERCISE ?= exercises/00_intro/00_start.c
 TARGET = $(BUILD_DIR)/current_exercise
 INC_DIR = include
 SOURCES = $(shell find exercises solutions -name '*.c')
+LINT_SOURCES = $(shell find solutions -name '*.c')
 
 # Compiler info
 COMPILER_INFO := $(shell $(CC) --version 2>/dev/null | tr '[:upper:]' '[:lower:]')
@@ -22,7 +23,7 @@ COMPILER_INFO := $(shell $(CC) --version 2>/dev/null | tr '[:upper:]' '[:lower:]
 # -g: Debug info (essential for helpful sanitizer output)
 # -fsanitize=address,undefined: The "Borrow Checker" simulation
 CFLAGS = -Wall -Wextra -Werror -Wpedantic -Wshadow -Wformat=2 -Wundef \
-         -g -fsanitize=address,undefined \
+         -std=c2x -g -fsanitize=address,undefined \
          -I include
 
 # Linker Flags
@@ -36,7 +37,7 @@ else ifneq (,$(findstring gcc,$(COMPILER_INFO)))
     CFLAGS += -Wconversion -Wlogical-op -Wduplicated-cond -Wduplicated-branches -fdiagnostics-color=always
 endif
 
-.PHONY: run clean prepare fmt
+.PHONY: run clean prepare fmt lint
 
 all: run
 
@@ -54,3 +55,6 @@ clean:
 
 fmt:
 	clang-format -i --style=file --fallback-style=LLVM $(SOURCES) $(wildcard $(INC_DIR)/*.h)
+
+lint:
+	clang-tidy -p . -extra-arg=-std=c2x -checks=-clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling $(LINT_SOURCES)

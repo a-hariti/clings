@@ -15,7 +15,7 @@ int main(void) {
     // to a pointer, which will cause a compiler error.
     int *p = n;
 
-    cling_assert(p == &n, "p should point to n");
+    check_ptr_msg(p, &n, "p should point to n");
     check_int(*p, 42);
 
     return 0;

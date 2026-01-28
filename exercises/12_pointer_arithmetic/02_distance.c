@@ -19,7 +19,7 @@ int main(void) {
     // Hint: Subtract start from end in the correct order.
     ptrdiff_t diff = start - end;
 
-    check_int((int)diff, 4);
+    check_ptrdiff_msg(diff, 4, "Distance should be 4 elements");
 
     return 0;
 }

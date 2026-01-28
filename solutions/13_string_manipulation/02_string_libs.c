@@ -32,8 +32,8 @@ int main(void) {
      */
     strncat(buffer, s2, sizeof(buffer) - strlen(buffer) - 1);
 
-    check_int(strcmp(buffer, "Learning C is "), 0);
-    check_int((int)strlen(buffer), 14);
+    check_str_msg(buffer, "Learning C is ", "Buffer should contain \"Learning C is \"");
+    check_size_msg(strlen(buffer), 14, "Buffer length should be 14");
 
     return 0;
 }

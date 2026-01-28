@@ -16,7 +16,7 @@ int main(void) {
     /* TODO: Fix the array size to include space for the null terminator '\0' */
     char my_string[5] = "Hello";
 
-    check_int((int)strlen(my_string), 5);
+    check_size_msg(strlen(my_string), 5, "String length should be 5");
 
     return 0;
 }

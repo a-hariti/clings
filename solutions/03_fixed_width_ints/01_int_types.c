@@ -11,7 +11,7 @@ int main(void) {
     int64_t timestamp = 2147483647;
 
     // This assertion checks the size of your type.
-    cling_assert(sizeof(timestamp) == 8, "Timestamp must be 64 bits wide!");
+    check_size_msg(sizeof(timestamp), 8, "Timestamp must be 64 bits wide!");
 
     // Check that it can hold a value larger than 32-bit max
     timestamp = 5000000000L;

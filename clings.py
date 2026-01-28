@@ -255,8 +255,6 @@ def watch_exercise(exercise, exercises, passed):
                 f"{SGR_BOLD}[q]{SGR_RESET} quit"
             )
         else:
-            print(f"{SGR_BOLD_RED}❌ FAILED{SGR_RESET}\n")
-            print(f"{SGR_BOLD_RED}COMPILATION/RUNTIME ERROR:{SGR_RESET}")
             if result.stdout:
                 print(result.stdout)
             if result.stderr:

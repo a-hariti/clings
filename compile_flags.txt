@@ -5,6 +5,7 @@
 -Wshadow
 -Wformat=2
 -Wundef
+-std=c2x
 -g
 -fsanitize=address,undefined
 -I

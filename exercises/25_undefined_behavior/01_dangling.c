@@ -21,7 +21,7 @@ int main(void) {
 
     // Accessing a dangling pointer is undefined behavior!
     // ASan will likely catch this if the compiler doesn't stop us first.
-    cling_assert(*ptr == 42, "The pointer should point to the value 42");
+    check_int_msg(*ptr, 42, "The pointer should point to the value 42");
 
     return 0;
 }

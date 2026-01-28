@@ -21,7 +21,7 @@ int main(void) {
 
     free(ptr);
 
-    cling_assert(ACTIVE_ALLOCATIONS == 0, "No active allocations should remain");
+    check_int_msg(ACTIVE_ALLOCATIONS, 0, "No active allocations should remain");
 
     return 0;
 }

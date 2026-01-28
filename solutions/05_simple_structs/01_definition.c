@@ -19,8 +19,8 @@ struct Person {
 int main(void) {
     struct Person p = {"Alice", 30};
 
-    check_int(p.age, 30);
-    cling_assert(p.name != NULL && strcmp(p.name, "Alice") == 0, "Name should be Alice");
+    check_int_msg(p.age, 30, "Age should be 30");
+    check_str_msg(p.name, "Alice", "Name should be Alice");
 
     return 0;
 }

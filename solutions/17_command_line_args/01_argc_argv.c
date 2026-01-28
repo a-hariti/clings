@@ -20,7 +20,7 @@ int main(int argc, char *argv[]) {
     cling_assert(argv[0] != NULL, "argv[0] should not be NULL");
 
     // The last element of argv is always NULL
-    cling_assert(argv[argc] == NULL, "argv[argc] should be NULL");
+    check_ptr_msg(argv[argc], NULL, "argv[argc] should be NULL");
 
     printf("Executing: %s\n", argv[0]);
 
