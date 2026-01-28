@@ -25,6 +25,7 @@ COMPILER_INFO := $(shell $(CC) --version 2>/dev/null | tr '[:upper:]' '[:lower:]
 CFLAGS = -Wall -Wextra -Werror -Wpedantic -Wshadow -Wformat=2 -Wundef \
          -std=c2x -g -fsanitize=address,undefined \
          -I include
+EXERCISE_CFLAGS ?=
 
 # Linker Flags
 # Sanitizers must be linked too
@@ -45,7 +46,7 @@ prepare:
 	@mkdir -p $(BUILD_DIR)
 
 $(TARGET): prepare $(EXERCISE)
-	@$(CC) $(CFLAGS) "$(EXERCISE)" -o $(TARGET) $(LDFLAGS)
+	@$(CC) $(CFLAGS) $(EXERCISE_CFLAGS) "$(EXERCISE)" -o $(TARGET) $(LDFLAGS)
 
 run: $(TARGET)
 	@$(TARGET)

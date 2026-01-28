@@ -203,6 +203,11 @@ def list_exercises(exercises, passed, current_index):
 
 def run_exercise_command(exercise):
     cmd = ["make", "run", "-s", "-B", f"EXERCISE={exercise['path']}"]
+    exercise_cflags = exercise.get("cflags")
+    if exercise_cflags:
+        if isinstance(exercise_cflags, list):
+            exercise_cflags = " ".join(exercise_cflags)
+        cmd.append(f"EXERCISE_CFLAGS={exercise_cflags}")
     result = subprocess.run(cmd, capture_output=True, text=True)
     return result
 

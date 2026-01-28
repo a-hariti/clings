@@ -15,12 +15,9 @@
  */
 
 int **allocate_matrix(size_t rows, size_t cols) {
-    // ignore this line
-    (void)cols;
-
     // TODO: Fix the allocation. It's currently using the wrong size for an array of pointers!
     // Hint: we are allocating an array of row pointers (int *).
-    int **matrix = (int **)malloc(rows * sizeof(int *));
+    int **matrix = (int **)malloc(rows * sizeof(int));
     if (matrix == NULL)
         return NULL;
 
@@ -32,7 +29,6 @@ int **allocate_matrix(size_t rows, size_t cols) {
     return matrix;
 }
 
-// silence unused parameter from clang-tidy
 void free_matrix(int **matrix) {
     // TODO: You need to free each row before freeing the matrix pointer itself.
     // If you only free(matrix), you'll have a memory leak!

@@ -21,18 +21,14 @@ typedef void (*Modifier)(void *data);
 void multiply_int_by_two(void *data) {
     // TODO: Cast data to an int pointer and multiply its value by 2.
     // Hint: int *pi = (int *)data;
-    (void)data;
 }
 
 void multiply_float_by_two(void *data) {
     // TODO: Cast data to a float pointer and multiply its value by 2.
-    (void)data;
 }
 
 void apply_modifier(Modifier mod, void *data) {
     // TODO: Call the 'mod' function pointer with 'data' as its argument.
-    (void)mod;
-    (void)data;
 }
 
 int main(void) {

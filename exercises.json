@@ -177,7 +177,10 @@
   {
     "name": "16_double_pointers/2d_arrays",
     "path": "exercises/16_double_pointers/02_2d_arrays.c",
-    "description": "Allocate and free a 2D array."
+    "description": "Allocate and free a 2D array.",
+    "cflags": [
+      "-Wno-unused-parameter"
+    ]
   },
   {
     "name": "17_command_line_args/argc_argv",
@@ -212,7 +215,10 @@
   {
     "name": "20_files/binary_io",
     "path": "exercises/20_files/02_binary_io.c",
-    "description": "Read and write binary data."
+    "description": "Read and write binary data.",
+    "cflags": [
+      "-Wno-unused-variable"
+    ]
   },
   {
     "name": "21_unions_bitfields/union_type",
@@ -252,7 +258,10 @@
   {
     "name": "23_function_pointers/void_pointer",
     "path": "exercises/23_function_pointers/03_void_pointer.c",
-    "description": "Use void* for generic data handling."
+    "description": "Use void* for generic data handling.",
+    "cflags": [
+      "-Wno-unused-parameter"
+    ]
   },
   {
     "name": "24_variadic_functions/sum",

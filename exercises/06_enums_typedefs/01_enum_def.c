@@ -18,7 +18,7 @@ int main(void) {
     // TODO: Declare a variable 's' of type 'enum Status' and set it to STATUS_PENDING
     enum Status s;
 
-    check_eq_msg(s, 2, "STATUS_PENDING should map to 2");
+    check_enum_msg(s, 2, "STATUS_PENDING should map to 2");
     check_eq_msg(s, STATUS_PENDING, "Status should be PENDING");
 
     return 0;

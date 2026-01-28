@@ -16,8 +16,7 @@ int **allocate_matrix(size_t rows, size_t cols) {
             for (size_t j = 0; j < i; j++) {
                 free(matrix[j]);
             }
-            // clang-tidy requires explicit cast for multilevel pointer conversion to void*
-            free((void *)matrix);
+            free(matrix);
             return NULL;
         }
     }
@@ -25,13 +24,12 @@ int **allocate_matrix(size_t rows, size_t cols) {
 }
 
 void free_matrix(int **matrix, size_t rows) {
-    (void)rows;
     // TODO: You need to free each row before freeing the matrix pointer itself.
     // If you only free(matrix), you'll have a memory leak!
     for (size_t i = 0; i < rows; i++) {
         free(matrix[i]);
     }
-    free((void *)matrix);
+    free(matrix);
 }
 
 // uses the matrix

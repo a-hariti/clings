@@ -288,6 +288,14 @@ static inline void clings_check_double_msg(double actual, double expected, const
         check_int_msg((actual), (expected), NULL);                                                                     \
     } while (0)
 
+#define check_enum_msg(actual, expected, message)                                                                      \
+    check_int_msg((int)(actual), (int)(expected), (message))
+
+#define check_enum(actual, expected)                                                                                   \
+    do {                                                                                                               \
+        check_enum_msg((actual), (expected), NULL);                                                                    \
+    } while (0)
+
 #define check_long_msg(actual, expected, message)                                                                      \
     clings_check_long_msg((actual), (expected), (message), __FILE__, __LINE__)
 
@@ -395,7 +403,7 @@ static inline void clings_check_double_msg(double actual, double expected, const
         long: clings_check_long_msg,                                                                                   \
         unsigned int: clings_check_uint_msg,                                                                           \
         unsigned long: clings_check_ulong_msg,                                                                         \
-        bool: clings_check_bool_msg,                                                                                  \
+        bool: clings_check_bool_msg,                                                                                   \
         default: clings_check_ptr_msg)((actual), (expected), (message), __FILE__, __LINE__)
 
 #define check_eq(actual, expected)                                                                                     \

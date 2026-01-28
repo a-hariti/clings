@@ -63,7 +63,5 @@ int main(void) {
     // Clean up
     remove(filename);
 
-    // ignore this line
-    (void)s1;
     return 0;
 }
