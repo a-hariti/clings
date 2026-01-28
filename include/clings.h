@@ -288,8 +288,7 @@ static inline void clings_check_double_msg(double actual, double expected, const
         check_int_msg((actual), (expected), NULL);                                                                     \
     } while (0)
 
-#define check_enum_msg(actual, expected, message)                                                                      \
-    check_int_msg((int)(actual), (int)(expected), (message))
+#define check_enum_msg(actual, expected, message) check_int_msg((int)(actual), (int)(expected), (message))
 
 #define check_enum(actual, expected)                                                                                   \
     do {                                                                                                               \
