@@ -1,3 +1,10 @@
+/*
+ * Goal: Run your first C program.
+ *
+ * This exercise is just a sanity check to make sure the compiler and
+ * runtime are working. No changes needed.
+ */
+
 #include <stdio.h>
 
 int main(void) {
