@@ -11,11 +11,10 @@ int main(void) {
     numbers[0] = 1;
     numbers[1] = 2;
 
-    int *tmp = NULL;
     // TODO: Reallocate to hold 4 ints using a temporary pointer.
-    // tmp = realloc(numbers, 4 * sizeof(int));
-    // if (tmp == NULL) { free(numbers); return 1; }
-    // numbers = tmp;
+    // int *new_ptr =  realloc(<ptr>, <size);
+    // check new_ptr for null
+    // then set numbers to new_ptr
 
     numbers[2] = 3;
     numbers[3] = 4;
