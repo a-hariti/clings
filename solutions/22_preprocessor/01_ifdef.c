@@ -2,8 +2,6 @@
 #include "clings.h"
 
 /*
- * Exercise: 01_ifdef.c
- *
  * The preprocessor can include or exclude code blocks using #ifdef, #else, and #endif.
  * This is widely used for feature flags and platform-specific logic.
  *

@@ -3,8 +3,6 @@
 #include "clings.h"
 
 /*
- * C-lings: 10_double_pointers/01_modify_ptr.c
- *
  * When you want a function to modify a pointer in the caller's scope
  * (for example, to allocate memory and return it via a parameter),
  * you must pass a pointer to that pointer (a double pointer).

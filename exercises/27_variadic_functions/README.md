@@ -15,8 +15,8 @@ Key macros from `stdarg.h`:
 The goal of this exercise is to implement a function that sums an arbitrary number of integers.
 
 ## Related Concepts
-- **08_functions**: Basics of function definitions and parameters.
-- **23_function_pointers**: Advanced function handling.
+- **10_functions**: Basics of function definitions and parameters.
+- **26_function_pointers**: Advanced function handling.
 
 ## Further Reading
 - [Beej's Guide: Variadic Functions](https://beej.us/guide/bgc/html/split/variadic-functions.html)

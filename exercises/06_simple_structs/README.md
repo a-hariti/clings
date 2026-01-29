@@ -21,8 +21,8 @@ struct point p = {10, 20};
 ```
 
 ## Related Concepts
-- **06_enums_typedefs**: Typedefs are commonly used with structs to simplify declarations.
-- **10_ptr_structs**: Advanced usage of structs with pointers and the arrow operator.
+- **07_enums_typedefs**: Typedefs are commonly used with structs to simplify declarations.
+- **12_ptr_structs**: Advanced usage of structs with pointers and the arrow operator.
 
 ## Further Reading
 - [Beej's Guide: Structs](https://beej.us/guide/bgc/html/split/structs.html)

@@ -12,7 +12,7 @@ Common types include:
 
 ## Related Concepts
 - **02_types**: Basics of integer types and overflow.
-- **20_files**: Binary file formats often rely on fixed-width types to ensure data is read correctly across different systems.
+- **23_files**: Binary file formats often rely on fixed-width types to ensure data is read correctly across different systems.
 
 ## Further Reading
 - [Beej's Guide: Fixed Width Integer Types](https://beej.us/guide/bgc/html/split/fixed-width-integer-types.html)

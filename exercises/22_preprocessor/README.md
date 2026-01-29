@@ -40,8 +40,8 @@ In this exercise, you need to use `#define` to enable a feature that is protecte
 In this exercise, you will encounter a compiler error because a header file is included multiple times. You need to add include guards to the header file to fix it.
 
 ## Related Concepts
-- **18_macros**: Basic macro definitions using `#define`.
-- **22_linkage**: Using headers to share declarations while keeping definitions in a single file.
+- **21_macros**: Basic macro definitions using `#define`.
+- **25_linkage**: Using headers to share declarations while keeping definitions in a single file.
 
 ## Further Reading
 - [Beej's Guide: The Preprocessor](https://beej.us/guide/bgc/html/split/the-preprocessor.html)

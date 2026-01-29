@@ -22,8 +22,8 @@ By convention, the array `argv` has `argc + 1` elements, and `argv[argc]` is alw
 The goal of this exercise is to change the `main` function signature to accept command line arguments and use them to pass the assertions.
 
 ## Related Concepts
-- **16_double_pointers**: `argv` is an array of pointers (`char* argv[]`), which is effectively a `char**`.
-- **13_string_manipulation**: Arguments are passed as strings and often need conversion (e.g., `atoi`).
+- **19_double_pointers**: `argv` is an array of pointers (`char* argv[]`), which is effectively a `char**`.
+- **15_string_manipulation**: Arguments are passed as strings and often need conversion (e.g., `atoi`).
 
 ## Further Reading
 - [Beej's Guide: Command Line Arguments](https://beej.us/guide/bgc/html/split/the-outside-environment.html#command-line-arguments)

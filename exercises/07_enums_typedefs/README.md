@@ -30,8 +30,8 @@ Point p = {10, 20};
 ```
 
 ## Related Concepts
-- **05_simple_structs**: Motivation for using `typedef` to avoid the `struct` keyword.
-- **07_control_flow**: Using `enum` values in `switch` statements for state management.
+- **06_simple_structs**: Motivation for using `typedef` to avoid the `struct` keyword.
+- **08_control_flow**: Using `enum` values in `switch` statements for state management.
 
 ## Further Reading
 - [Beej's Guide: Enumerated Types: enum](https://beej.us/guide/bgc/html/split/enumerated-types-enum.html)

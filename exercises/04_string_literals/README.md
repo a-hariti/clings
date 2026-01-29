@@ -9,7 +9,7 @@ They are automatically null-terminated by the compiler, meaning a `\0` character
 
 ## Related Concepts
 - **02_types**: String literals are technically arrays of `char`.
-- **09_pointers**: String literals are often accessed via `char*`.
+- **11_pointers**: String literals are often accessed via `char*`.
 
 ## Further Reading
 - [Beej's Guide: Strings](https://beej.us/guide/bgc/html/split/strings.html#strings)
