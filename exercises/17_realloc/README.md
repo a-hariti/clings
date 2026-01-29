@@ -38,6 +38,6 @@ The goal of this exercise is to correctly allocate memory for a struct with a Fl
 The goal of this exercise is to use a temporary pointer so you don't lose the original allocation if `realloc()` fails.
 
 ## Further Reading
-- [Beej's Guide: realloc()](https://beej.us/guide/bgc/html/split/dynamic-memory-allocation.html#realloc)
+- [Beej's Guide: realloc()](https://beej.us/guide/bgc/html/split/manual-memory-allocation.html#changing-allocated-size-with-realloc)
 - [Beej's Guide: Flexible Array Members](https://beej.us/guide/bgc/html/split/structs-ii-more-fun-with-structs.html#flexible-array-members)
 - `man 3 realloc`

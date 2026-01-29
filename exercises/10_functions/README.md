@@ -53,5 +53,5 @@ int main(void) {
 ```
 
 ## Further Reading
-- [Beej's Guide to C Programming: Functions](https://beej.us/guide/bgc/html/split/functions.html)
-- [Beej's Guide to C Programming: Pointers (for Pass-by-Reference)](https://beej.us/guide/bgc/html/split/pointers2.html#passing-pointers-as-arguments)
+- [Beej's Guide to C Programming: Functions](https://beej.us/guide/bgc/html/split/functions.html#functions)
+- [Beej's Guide to C Programming: Pointers (for Pass-by-Reference)](https://beej.us/guide/bgc/html/split/pointers.html#ptpass)

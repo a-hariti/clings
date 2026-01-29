@@ -29,5 +29,5 @@ bool less = (s < u);
 Use a cast or unify the types before comparing.
 
 ## Further Reading
-- [Beej's Guide: Basic Types](https://beej.us/guide/bgc/html/split/variables-and-statements.html#basic-types)
-- [Beej's Guide: Expressions and Operators](https://beej.us/guide/bgc/html/split/expressions.html)
+- [Beej's Guide: Basic Types](https://beej.us/guide/bgc/html/split/variables-and-statements.html#variable-types)
+- [Beej's Guide: Expressions and Operators](https://beej.us/guide/bgc/html/split/variables-and-statements.html#operators)

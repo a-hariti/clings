@@ -9,5 +9,5 @@ Another critical aspect is **Bounds Checking**. C does not perform bounds checki
 The bounds-checked exercise in this chapter has you implement a safe accessor that returns an error instead of reading out of bounds.
 
 ## Further Reading
-- [Beej's Guide: Arrays](https://beej.us/guide/bgc/html/split/arrays.html)
-- [Beej's Guide: Pointers](https://beej.us/guide/bgc/html/split/pointers.html#arrays-and-pointers) (Specifically the section on Arrays and Pointers)
+- [Beej's Guide: Arrays](https://beej.us/guide/bgc/html/split/arrays.html#arrays)
+- [Beej's Guide: Arrays and Pointers](https://beej.us/guide/bgc/html/split/arrays.html#arrays-and-pointers)

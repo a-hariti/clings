@@ -60,7 +60,7 @@ Arguments:
 It's common to use the `"b"` flag in `fopen()` modes (e.g., `"rb"`, `"wb"`) to indicate binary mode. On many systems (like Linux/macOS) this has no effect, but on Windows it prevents the translation of newline characters.
 
 ## Further Reading
-- [Beej's Guide to C Programming: File Input/Output](https://beej.us/guide/bgc/html/split/file-inputoutput.html)
-- [Beej's Guide to C Programming: Binary I/O](https://beej.us/guide/bgc/html/split/file-inputoutput.html#binary-io-basics)
+- [Beej's Guide to C Programming: File Input/Output](https://beej.us/guide/bgc/html/split/file-inputoutput.html#file-inputoutput)
+- [Beej's Guide to C Programming: Binary I/O](https://beej.us/guide/bgc/html/split/file-inputoutput.html#binary-file-io)
 - `man 3 fwrite`
 - `man 3 fread`

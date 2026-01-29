@@ -34,5 +34,5 @@ Point p = {10, 20};
 - **08_control_flow**: Using `enum` values in `switch` statements for state management.
 
 ## Further Reading
-- [Beej's Guide: Enumerated Types: enum](https://beej.us/guide/bgc/html/split/enumerated-types-enum.html)
-- [Beej's Guide: typedef: Making New Types](https://beej.us/guide/bgc/html/split/typedef-making-new-types.html)
+- [Beej's Guide: Enumerated Types: enum](https://beej.us/guide/bgc/html/split/enumerated-types-enum.html#enumerated-types-enum)
+- [Beej's Guide: typedef: Making New Types](https://beej.us/guide/bgc/html/split/typedef-making-new-types.html#typedef-making-new-types)

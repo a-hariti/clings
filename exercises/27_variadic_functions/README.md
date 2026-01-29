@@ -19,5 +19,5 @@ The goal of this exercise is to implement a function that sums an arbitrary numb
 - **26_function_pointers**: Advanced function handling.
 
 ## Further Reading
-- [Beej's Guide: Variadic Functions](https://beej.us/guide/bgc/html/split/variadic-functions.html)
+- [Beej's Guide: Variadic Functions](https://beej.us/guide/bgc/html/split/variadic-functions.html#variadic-functions)
 - `man 3 stdarg`

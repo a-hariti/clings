@@ -19,7 +19,7 @@ In this exercise, you'll learn the difference between `const int *` (pointer to 
 In this exercise, you'll apply `const` to pointer parameters to prevent accidental mutation.
 
 ## Further Reading
-- [Beej's Guide: Pointers](https://beej.us/guide/bgc/html/split/pointers.html)
+- [Beej's Guide: Pointers](https://beej.us/guide/bgc/html/split/pointers.html#pointers)
 
 Key concepts:
 - `&` (Address-of operator): Used to get the memory address of a variable.

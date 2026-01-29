@@ -11,4 +11,4 @@ One unique feature (and common source of bugs) in C is `switch` fallthrough. Whe
 Loops (`for`, `while`, `do-while`) are used to execute a block of code multiple times. A common mistake is accidentally terminating a loop with a semicolon before the intended block.
 
 ## Further Reading
-- [Beej's Guide: Control Flow](https://beej.us/guide/bgc/html/split/control-flow.html)
+- [Beej's Guide: Control Flow](https://beej.us/guide/bgc/html/split/variables-and-statements.html#flow-control)

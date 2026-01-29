@@ -7,7 +7,7 @@ In C, every variable must be declared with a type before it can be used. This te
 The goal of this exercise is to fix the variable declaration so the program compiles.
 
 ## Further Reading
-- [Beej's Guide: Variables and Statements](https://beej.us/guide/bgc/html/split/variables-and-statements.html)
+- [Beej's Guide: Variables and Statements](https://beej.us/guide/bgc/html/split/variables-and-statements.html#variables-and-statements)
 
 Common types include:
 - `int`: Integer numbers (e.g., 1, -5, 42)

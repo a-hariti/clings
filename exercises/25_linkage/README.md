@@ -46,4 +46,4 @@ This exercise asks you to implement a counter using a static local variable.
 
 ## Further Reading
 
-- [Beej's Guide to C Programming - Section 13.3: Linkage](https://beej.us/guide/bgc/html/split/scope-linkage-and-storage-duration.html#linkage)
+- [Beej's Guide to C Programming - Section 13.3: Linkage](https://beej.us/guide/bgc/html/split/multifile-projects.html#static-and-extern)

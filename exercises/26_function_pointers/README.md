@@ -30,5 +30,5 @@ void qsort(void *base, size_t nmemb, size_t size,
 This exercise adds a context pointer so callbacks can update external state (e.g., accumulating a sum).
 
 ## Further Reading
-- [Beej's Guide: Function Pointers](https://beej.us/guide/bgc/html/split/pointers2.html#function-pointers)
+- [Beej's Guide: Function Pointers](https://beej.us/guide/bgc/html/split/pointers-iii-pointers-to-pointers-and-more.html#pointers-to-functions)
 - `man 3 qsort` (A classic example of a function that uses a function pointer)

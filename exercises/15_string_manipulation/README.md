@@ -5,5 +5,5 @@ In C, strings are not a first-class data type. Instead, they are simply arrays o
 This terminator tells functions like `printf` or `strlen` where the string ends. Without it, these functions will continue reading memory past the end of the array, leading to Undefined Behavior.
 
 ## Further Reading
-- [Beej's Guide: Strings](https://beej.us/guide/bgc/html/split/strings.html)
+- [Beej's Guide: Strings](https://beej.us/guide/bgc/html/split/strings.html#strings)
 - `man 3 string`

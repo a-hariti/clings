@@ -15,5 +15,5 @@ Common types include:
 - **23_files**: Binary file formats often rely on fixed-width types to ensure data is read correctly across different systems.
 
 ## Further Reading
-- [Beej's Guide: Fixed Width Integer Types](https://beej.us/guide/bgc/html/split/fixed-width-integer-types.html)
+- [Beej's Guide: Fixed Width Integer Types](https://beej.us/guide/bgc/html/split/fixed-width-integer-types.html#fixed-width-integer-types)
 - `man stdint` (if available) or standard documentation.

@@ -19,6 +19,6 @@ Accessing memory through a pointer after that memory has been explicitly release
 Shifting by a negative value or by an amount greater than or equal to the bit width is undefined behavior. Sanitizers can help catch these cases.
 
 ## Further Reading
-- [Beej's Guide: Returning Pointers to Local Variables](https://beej.us/guide/bgc/html/split/pointers.html#returning-pointers-to-local-variables)
-- [Beej's Guide: free()](https://beej.us/guide/bgc/html/split/malloc.html#freeing-memory)
+- [Beej's Guide: Pointers](https://beej.us/guide/bgc/html/split/pointers.html#pointers)
+- [Beej's Guide: free()](https://beej.us/guide/bgc/html/split/manual-memory-allocation.html#allocating-and-deallocating-malloc-and-free)
 - `man 3 free`

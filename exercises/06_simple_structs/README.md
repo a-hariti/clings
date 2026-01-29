@@ -25,4 +25,4 @@ struct point p = {10, 20};
 - **12_ptr_structs**: Advanced usage of structs with pointers and the arrow operator.
 
 ## Further Reading
-- [Beej's Guide: Structs](https://beej.us/guide/bgc/html/split/structs.html)
+- [Beej's Guide: Structs](https://beej.us/guide/bgc/html/split/structs.html#declaring-a-struct)

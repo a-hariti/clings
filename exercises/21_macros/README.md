@@ -15,7 +15,7 @@ The goal of this exercise is to prevent double evaluation of arguments in a macr
 The goal of this exercise is to wrap multi-statement macros in `do { } while (0)` so they behave like a single statement.
 
 ## Further Reading
-- [Beej's Guide: The Preprocessor](https://beej.us/guide/bgc/html/split/the-preprocessor.html)
+- [Beej's Guide: The Preprocessor](https://beej.us/guide/bgc/html/split/the-c-preprocessor.html#the-c-preprocessor)
 
 Common pitfalls include:
 - Operator precedence: Macros should almost always wrap their arguments and the entire expression in parentheses.

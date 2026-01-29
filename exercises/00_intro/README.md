@@ -10,4 +10,4 @@ This is the very first exercise. It's just a simple "Hello World" style program 
 Compile and run the code. If you see the output, you're good to go!
 
 ## Further Reading
-- [Beej's Guide: Hello, World!](https://beej.us/guide/bgc/html/split/hello-world.html)
+- [Beej's Guide: Hello, World!](https://beej.us/guide/bgc/html/split/hello-world.html#hello-world)

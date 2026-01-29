@@ -14,4 +14,4 @@ Double pointers are commonly used in C for:
 3. **Linked Lists/Trees**: Specifically when modifying the root or head pointer.
 
 ## Further Reading
-- [Beej's Guide: Pointers II](https://beej.us/guide/bgc/html/split/pointers2.html#pointers-to-pointers)
+- [Beej's Guide: Pointers II](https://beej.us/guide/bgc/html/split/pointers-iii-pointers-to-pointers-and-more.html#pointers-to-pointers)

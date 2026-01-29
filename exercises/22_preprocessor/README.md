@@ -44,6 +44,6 @@ In this exercise, you will encounter a compiler error because a header file is i
 - **25_linkage**: Using headers to share declarations while keeping definitions in a single file.
 
 ## Further Reading
-- [Beej's Guide: The Preprocessor](https://beej.us/guide/bgc/html/split/the-preprocessor.html)
-- [Beej's Guide: Conditional Compilation](https://beej.us/guide/bgc/html/split/the-preprocessor.html#conditional-compilation)
-- [Beej's Guide: Header Files](https://beej.us/guide/bgc/html/split/the-preprocessor.html#header-files)
+- [Beej's Guide: The Preprocessor](https://beej.us/guide/bgc/html/split/the-c-preprocessor.html#the-c-preprocessor)
+- [Beej's Guide: Conditional Compilation](https://beej.us/guide/bgc/html/split/the-c-preprocessor.html#conditional-compilation)
+- [Beej's Guide: Header Files](https://beej.us/guide/bgc/html/split/the-c-preprocessor.html#include)

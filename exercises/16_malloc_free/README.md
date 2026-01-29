@@ -9,7 +9,7 @@ Unlike stack memory (local variables), heap memory persists until you explicitly
 In this exercise, you need to allocate memory on the heap for an integer, assign a value to it, and then free it.
 
 ## Further Reading
-- [Beej's Guide: Manual Memory Management](https://beej.us/guide/bgc/html/split/manual-memory-management.html)
+- [Beej's Guide: Manual Memory Management](https://beej.us/guide/bgc/html/split/manual-memory-allocation.html#manual-memory-allocation)
 - `man 3 malloc`
 - `man 3 free`
 
