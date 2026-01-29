@@ -35,6 +35,11 @@
     "description": "Fix the integer division bug."
   },
   {
+    "name": "02_types/signed_unsigned",
+    "path": "exercises/02_types/03_signed_unsigned.c",
+    "description": "Fix signed/unsigned comparison pitfalls."
+  },
+  {
     "name": "03_fixed_width_ints/int_types",
     "path": "exercises/03_fixed_width_ints/01_int_types.c",
     "description": "Use fixed-width integers for portability."
@@ -53,6 +58,16 @@
     "name": "04_string_literals/assignment",
     "path": "exercises/04_string_literals/02_assignment.c",
     "description": "Assign a string literal to a pointer."
+  },
+  {
+    "name": "05_input_parsing/fgets_basic",
+    "path": "exercises/05_input_parsing/01_fgets_basic.c",
+    "description": "Read a line safely using fgets."
+  },
+  {
+    "name": "05_input_parsing/sscanf_numbers",
+    "path": "exercises/05_input_parsing/02_sscanf_numbers.c",
+    "description": "Parse numbers using sscanf."
   },
   {
     "name": "06_simple_structs/definition",
@@ -85,6 +100,19 @@
     "description": "Fix the loop scope issue."
   },
   {
+    "name": "09_error_handling/errno_strerror",
+    "path": "exercises/09_error_handling/01_errno_strerror.c",
+    "description": "Use errno and strerror for diagnostics."
+  },
+  {
+    "name": "09_error_handling/return_codes",
+    "path": "exercises/09_error_handling/02_return_codes.c",
+    "description": "Return error codes from helper functions.",
+    "cflags": [
+      "-Wno-unused-parameter"
+    ]
+  },
+  {
     "name": "10_functions/prototypes",
     "path": "exercises/10_functions/01_prototypes.c",
     "description": "Add the missing function prototype."
@@ -110,6 +138,11 @@
     "description": "Understand const int* vs int *const."
   },
   {
+    "name": "11_pointers/const_qualifiers",
+    "path": "exercises/11_pointers/04_const_qualifiers.c",
+    "description": "Apply const qualifiers to pointer parameters."
+  },
+  {
     "name": "12_ptr_structs/dot_arrow",
     "path": "exercises/12_ptr_structs/01_dot_arrow.c",
     "description": "Use the correct operator for struct pointers."
@@ -128,6 +161,14 @@
     "name": "13_arrays/out_of_bounds",
     "path": "exercises/13_arrays/02_out_of_bounds.c",
     "description": "Fix the off-by-one error."
+  },
+  {
+    "name": "13_arrays/bounds_checked",
+    "path": "exercises/13_arrays/03_bounds_checked.c",
+    "description": "Implement a bounds-checked accessor.",
+    "cflags": [
+      "-Wno-unused-parameter"
+    ]
   },
   {
     "name": "14_pointer_arithmetic/increment",
@@ -160,6 +201,11 @@
     "description": "Free the allocated memory."
   },
   {
+    "name": "16_malloc_free/calloc_vs_malloc",
+    "path": "exercises/16_malloc_free/03_calloc_vs_malloc.c",
+    "description": "Use calloc for zero-initialized memory."
+  },
+  {
     "name": "17_realloc/resize",
     "path": "exercises/17_realloc/01_resize.c",
     "description": "Handle realloc pointer movement correctly."
@@ -168,6 +214,21 @@
     "name": "17_realloc/flexible_array",
     "path": "exercises/17_realloc/02_flexible_array.c",
     "description": "Use Flexible Array Members (FAMs) for variable-length structs."
+  },
+  {
+    "name": "17_realloc/safe_realloc",
+    "path": "exercises/17_realloc/03_safe_realloc.c",
+    "description": "Use a safe realloc pattern."
+  },
+  {
+    "name": "18_memory_layout/offsetof",
+    "path": "exercises/18_memory_layout/01_offsetof.c",
+    "description": "Compute offsets with offsetof."
+  },
+  {
+    "name": "18_memory_layout/padding_calc",
+    "path": "exercises/18_memory_layout/02_padding_calc.c",
+    "description": "Calculate padding using offsetof and sizeof."
   },
   {
     "name": "19_double_pointers/modify_ptr",
@@ -198,6 +259,11 @@
     "description": "Prevent double evaluation in macros."
   },
   {
+    "name": "21_macros/do_while",
+    "path": "exercises/21_macros/03_do_while.c",
+    "description": "Make a macro behave like a single statement."
+  },
+  {
     "name": "22_preprocessor/ifdef",
     "path": "exercises/22_preprocessor/01_ifdef.c",
     "description": "Use conditional compilation."
@@ -219,6 +285,11 @@
     "cflags": [
       "-Wno-unused-variable"
     ]
+  },
+  {
+    "name": "23_files/text_io",
+    "path": "exercises/23_files/03_text_io.c",
+    "description": "Read and write text lines with fgets."
   },
   {
     "name": "24_unions_bitfields/union_type",
@@ -246,6 +317,11 @@
     "description": "Declare an external variable."
   },
   {
+    "name": "25_linkage/static_local",
+    "path": "exercises/25_linkage/04_static_local.c",
+    "description": "Use a static local variable to preserve state."
+  },
+  {
     "name": "26_function_pointers/callback",
     "path": "exercises/26_function_pointers/01_callback.c",
     "description": "Implement a map function."
@@ -264,6 +340,14 @@
     ]
   },
   {
+    "name": "26_function_pointers/callback_ctx",
+    "path": "exercises/26_function_pointers/04_callback_ctx.c",
+    "description": "Use callbacks with context pointers.",
+    "cflags": [
+      "-Wno-unused-parameter"
+    ]
+  },
+  {
     "name": "27_variadic_functions/sum",
     "path": "exercises/27_variadic_functions/01_sum.c",
     "description": "Implement a variadic sum function."
@@ -277,5 +361,10 @@
     "name": "28_undefined_behavior/use_after_free",
     "path": "exercises/28_undefined_behavior/02_use_after_free.c",
     "description": "Don't touch memory after free."
+  },
+  {
+    "name": "28_undefined_behavior/shift_ub",
+    "path": "exercises/28_undefined_behavior/03_shift_ub.c",
+    "description": "Avoid undefined behavior when shifting."
   }
 ]

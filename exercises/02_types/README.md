@@ -15,6 +15,19 @@ To get a floating-point result, at least one of the operands must be a floating-
 float x = (float)5 / 2; // x will be 2.5
 ```
 
+## Signed vs Unsigned
+
+Mixing signed and unsigned integers in comparisons can lead to surprising results because the signed value is converted to unsigned.
+
+```c
+int s = -1;
+unsigned int u = 1;
+// s is converted to unsigned, so this comparison is false.
+bool less = (s < u);
+```
+
+Use a cast or unify the types before comparing.
+
 ## Further Reading
 - [Beej's Guide: Basic Types](https://beej.us/guide/bgc/html/split/variables-and-statements.html#basic-types)
 - [Beej's Guide: Expressions and Operators](https://beej.us/guide/bgc/html/split/expressions.html)

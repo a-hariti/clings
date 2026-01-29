@@ -20,6 +20,23 @@ The second argument is the **mode**:
 
 When finished, always close the file with `fclose(fp)`.
 
+## Text I/O
+
+For line-based text processing, `fgets()` is safer than `fscanf()` because it
+respects a maximum buffer size and won't overflow your array.
+
+```c
+char line[128];
+while (fgets(line, sizeof(line), fp)) {
+    /* process line */
+}
+```
+
+If you need to compare lines, remember to strip the trailing `\n`:
+```c
+line[strcspn(line, "\n")] = '\0';
+```
+
 ## Binary I/O
 
 While text I/O (`fprintf`, `fscanf`, `fgets`) is human-readable, it involves overhead to convert data to and from strings. Binary I/O allows you to write the raw bytes of your data (like a struct or an array) directly to a file.

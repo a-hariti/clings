@@ -14,6 +14,10 @@ In this exercise, you'll learn how to modify the value of a variable by derefere
 
 In this exercise, you'll learn the difference between `const int *` (pointer to constant) and `int *const` (constant pointer).
 
+## Exercise: const_qualifiers
+
+In this exercise, you'll apply `const` to pointer parameters to prevent accidental mutation.
+
 ## Further Reading
 - [Beej's Guide: Pointers](https://beej.us/guide/bgc/html/split/pointers.html)
 

@@ -25,6 +25,10 @@ void qsort(void *base, size_t nmemb, size_t size,
 
 `void*` is a generic pointer type that can point to any object. It's often used in conjunction with function pointers to create generic interfaces. Since `void*` cannot be dereferenced, you must cast it back to a concrete type before use.
 
+## Exercise: callback_ctx
+
+This exercise adds a context pointer so callbacks can update external state (e.g., accumulating a sum).
+
 ## Further Reading
 - [Beej's Guide: Function Pointers](https://beej.us/guide/bgc/html/split/pointers2.html#function-pointers)
 - `man 3 qsort` (A classic example of a function that uses a function pointer)

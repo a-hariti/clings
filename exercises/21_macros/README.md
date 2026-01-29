@@ -10,6 +10,10 @@ The goal of this exercise is to fix the macro definition to handle operator prec
 
 The goal of this exercise is to prevent double evaluation of arguments in a macro by using a safer alternative.
 
+## Exercise: do_while
+
+The goal of this exercise is to wrap multi-statement macros in `do { } while (0)` so they behave like a single statement.
+
 ## Further Reading
 - [Beej's Guide: The Preprocessor](https://beej.us/guide/bgc/html/split/the-preprocessor.html)
 

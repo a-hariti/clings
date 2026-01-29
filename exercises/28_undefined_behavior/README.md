@@ -14,6 +14,10 @@ A classic mistake is returning a pointer to a local variable from a function. Si
 
 Accessing memory through a pointer after that memory has been explicitly released with `free()` is another form of undefined behavior. Once memory is freed, the memory manager may reuse it for something else, so reading from or writing to it can corrupt data or cause crashes.
 
+## Undefined Shifts
+
+Shifting by a negative value or by an amount greater than or equal to the bit width is undefined behavior. Sanitizers can help catch these cases.
+
 ## Further Reading
 - [Beej's Guide: Returning Pointers to Local Variables](https://beej.us/guide/bgc/html/split/pointers.html#returning-pointers-to-local-variables)
 - [Beej's Guide: free()](https://beej.us/guide/bgc/html/split/malloc.html#freeing-memory)

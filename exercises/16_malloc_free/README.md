@@ -15,6 +15,7 @@ In this exercise, you need to allocate memory on the heap for an integer, assign
 
 Key functions:
 - `malloc(size_t size)`: Allocates `size` bytes and returns a pointer to them.
+- `calloc(size_t count, size_t size)`: Allocates and zero-initializes an array.
 - `free(void *ptr)`: Releases the memory previously allocated by `malloc`.
 
 Always check if `malloc` returned `NULL`, which happens if the system is out of memory!
