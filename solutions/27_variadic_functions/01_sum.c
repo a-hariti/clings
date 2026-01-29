@@ -7,12 +7,17 @@
  * The first argument 'count' tells you how many integers follow.
  */
 int sum(int count, ...) {
+    if (count <= 0) {
+        return 0;
+    }
     va_list args;
     va_start(args, count);
     int total = 0;
     for (int i = 0; i < count; i++) {
+        // NOLINTNEXTLINE(clang-analyzer-valist.Uninitialized)
         total += va_arg(args, int);
     }
+    // NOLINTNEXTLINE(clang-analyzer-valist.Uninitialized)
     va_end(args);
     return total;
 }

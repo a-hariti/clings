@@ -25,5 +25,8 @@ int main(void) {
 
     check_int_msg(*ptr, 42, "The pointer should point to the value 42");
 
+    free(ptr);
+    ptr = NULL;
+
     return 0;
 }
