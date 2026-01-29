@@ -14,6 +14,18 @@ The goal of this exercise is to prevent double evaluation of arguments in a macr
 
 The goal of this exercise is to wrap multi-statement macros in `do { } while (0)` so they behave like a single statement.
 
+## Exercise: stringify
+
+The goal of this exercise is to implement a stringification macro that expands arguments before turning them into strings.
+
+## Exercise: token_paste
+
+The goal of this exercise is to build identifiers using `##`.
+
+## Exercise: variadic_log
+
+The goal of this exercise is to define a variadic macro that works with or without extra arguments.
+
 ## Further Reading
 - [Beej's Guide: The Preprocessor](https://beej.us/guide/bgc/html/split/the-c-preprocessor.html#the-c-preprocessor)
 

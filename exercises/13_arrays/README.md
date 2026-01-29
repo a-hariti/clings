@@ -8,6 +8,13 @@ Another critical aspect is **Bounds Checking**. C does not perform bounds checki
 
 The bounds-checked exercise in this chapter has you implement a safe accessor that returns an error instead of reading out of bounds.
 
+## Exercises
+- `01_decay.c`: See array decay inside functions.
+- `02_out_of_bounds.c`: Fix an off-by-one error.
+- `03_bounds_checked.c`: Implement a safe accessor.
+- `04_array_pointer_equiv.c`: Compare array and pointer expressions.
+- `05_vla_params.c`: Pass a VLA with runtime sizes.
+
 ## Further Reading
 - [Beej's Guide: Arrays](https://beej.us/guide/bgc/html/split/arrays.html#arrays)
 - [Beej's Guide: Arrays and Pointers](https://beej.us/guide/bgc/html/split/arrays.html#arrays-and-pointers)

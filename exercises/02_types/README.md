@@ -28,6 +28,10 @@ bool less = (s < u);
 
 Use a cast or unify the types before comparing.
 
+## Integer Promotions
+
+Smaller integer types like `char` and `short` are promoted to `int` in most expressions. The promotion happens before the operation, but assigning back to a smaller type can still truncate the result. Use a wider type for intermediate values when you need the full range.
+
 ## Further Reading
 - [Beej's Guide: Basic Types](https://beej.us/guide/bgc/html/split/variables-and-statements.html#variable-types)
 - [Beej's Guide: Expressions and Operators](https://beej.us/guide/bgc/html/split/variables-and-statements.html#operators)

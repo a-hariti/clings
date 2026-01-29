@@ -40,6 +40,11 @@
     "description": "Fix signed/unsigned comparison pitfalls."
   },
   {
+    "name": "02_types/integer_promotions",
+    "path": "exercises/02_types/04_integer_promotions.c",
+    "description": "Avoid narrowing after integer promotions."
+  },
+  {
     "name": "03_fixed_width_ints/int_types",
     "path": "exercises/03_fixed_width_ints/01_int_types.c",
     "description": "Use fixed-width integers for portability."
@@ -166,6 +171,16 @@
     ]
   },
   {
+    "name": "13_arrays/array_pointer_equiv",
+    "path": "exercises/13_arrays/04_array_pointer_equiv.c",
+    "description": "Compare array and pointer expressions."
+  },
+  {
+    "name": "13_arrays/vla_params",
+    "path": "exercises/13_arrays/05_vla_params.c",
+    "description": "Pass a VLA with runtime sizes."
+  },
+  {
     "name": "14_pointer_arithmetic/increment",
     "path": "exercises/14_pointer_arithmetic/01_increment.c",
     "description": "Iterate using pointer increment."
@@ -184,6 +199,31 @@
     "name": "15_string_manipulation/string_libs",
     "path": "exercises/15_string_manipulation/02_string_libs.c",
     "description": "Use string manipulation functions safely."
+  },
+  {
+    "name": "15_string_manipulation/strlen_vs_sizeof",
+    "path": "exercises/15_string_manipulation/03_strlen_vs_sizeof.c",
+    "description": "Use strlen instead of sizeof for string length."
+  },
+  {
+    "name": "15_string_manipulation/strncpy_termination",
+    "path": "exercises/15_string_manipulation/04_strncpy_termination.c",
+    "description": "Ensure strncpy results are null-terminated."
+  },
+  {
+    "name": "15_string_manipulation/strncat_remaining",
+    "path": "exercises/15_string_manipulation/05_strncat_remaining.c",
+    "description": "Append using the remaining buffer space."
+  },
+  {
+    "name": "15_string_manipulation/memcmp_vs_strcmp",
+    "path": "exercises/15_string_manipulation/06_memcmp_vs_strcmp.c",
+    "description": "Compare raw buffers with memcmp."
+  },
+  {
+    "name": "15_string_manipulation/strchr_strrchr",
+    "path": "exercises/15_string_manipulation/07_strchr_strrchr.c",
+    "description": "Find first and last occurrences in a string."
   },
   {
     "name": "16_malloc_free/heap_alloc",
@@ -262,6 +302,21 @@
     "name": "21_macros/do_while",
     "path": "exercises/21_macros/03_do_while.c",
     "description": "Make a macro behave like a single statement."
+  },
+  {
+    "name": "21_macros/stringify",
+    "path": "exercises/21_macros/04_stringify.c",
+    "description": "Expand then stringify a macro argument."
+  },
+  {
+    "name": "21_macros/token_paste",
+    "path": "exercises/21_macros/05_token_paste.c",
+    "description": "Build identifiers with token pasting."
+  },
+  {
+    "name": "21_macros/variadic_log",
+    "path": "exercises/21_macros/06_variadic_log.c",
+    "description": "Define a variadic logging macro."
   },
   {
     "name": "22_preprocessor/ifdef",
