@@ -148,11 +148,6 @@
     "description": "Use the correct operator for struct pointers."
   },
   {
-    "name": "12_ptr_structs/padding",
-    "path": "exercises/12_ptr_structs/02_padding.c",
-    "description": "Optimize struct layout."
-  },
-  {
     "name": "13_arrays/decay",
     "path": "exercises/13_arrays/01_decay.c",
     "description": "Fix the array size calculation (array decay)."
@@ -229,6 +224,11 @@
     "name": "18_memory_layout/padding_calc",
     "path": "exercises/18_memory_layout/02_padding_calc.c",
     "description": "Calculate padding using offsetof and sizeof."
+  },
+  {
+    "name": "18_memory_layout/padding",
+    "path": "exercises/18_memory_layout/03_padding.c",
+    "description": "Optimize struct layout."
   },
   {
     "name": "19_double_pointers/modify_ptr",
