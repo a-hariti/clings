@@ -19,6 +19,7 @@ int main(void) {
     // ptr = values;
     // first = &values[0];
     // second = values + 1;
+    // Note the test assertions below
     // array_bytes = sizeof(values);
     // ptr_bytes = sizeof(ptr);
 

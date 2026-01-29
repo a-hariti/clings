@@ -19,7 +19,6 @@ int main(void) {
     int count = 0;
 
     while (fgets(line, sizeof(line), in) != NULL) {
-        line[strcspn(line, "\n")] = '\0'; // NOLINT(clang-analyzer-security.ArrayBound)
         if (count == 0) {
             strncpy(first, line, sizeof(first) - 1);
         }
@@ -27,7 +26,7 @@ int main(void) {
     }
 
     check_int_msg(count, 2, "Should read two lines");
-    check_str_msg(first, "Alice", "First line should be Alice");
+    check_str_msg(first, "Alice\n", "First line should be Alice");
 
     fclose(in);
     remove(filename);

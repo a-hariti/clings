@@ -10,9 +10,6 @@ int sum_row(int rows, int cols, int matrix[rows][cols], int row) {
     int total = 0;
 
     // TODO: Sum the elements in the selected row.
-    // for (int c = 0; c < cols; c++) {
-    //     total += matrix[row][c];
-    // }
 
     return total;
 }

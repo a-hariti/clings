@@ -8,13 +8,13 @@
  */
 
 int main(void) {
-    char buffer[8] = "Hi";
+    char buffer[8] = "Hi ";
     const char *name = "Bob";
 
     // TODO: Append using the remaining space in buffer.
     // strncat(buffer, name, <remaining>);
 
-    check_str_msg(buffer, "HiBob", "Buffer should contain the full name");
+    check_str_msg(buffer, "Hi Bob", "Buffer should contain the full name");
 
     return 0;
 }

@@ -15,8 +15,8 @@ int main(void) {
     size_t tail_padding = 0;
 
     // TODO: Compute padding before b and after c.
-    // padding_between = offsetof(struct Weird, b) - offsetof(struct Weird, a) - sizeof(char);
-    // tail_padding = sizeof(struct Weird) - (offsetof(struct Weird, c) + sizeof(char));
+    // padding_between = offsetof(field b) - offsetof(field a) - sizeof(field a);
+    // tail_padding = sizeof(Weird) - (offsetof(field c) + sizeof(field c));
 
     check_size_msg(padding_between, offsetof(struct Weird, b) - offsetof(struct Weird, a) - sizeof(char),
                    "padding before b should match computed value");
