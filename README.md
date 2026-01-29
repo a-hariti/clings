@@ -41,6 +41,40 @@ Tips:
 - You should open the termial in a vertical split for the fastest feedback loop.
 - You can generally **Ctrl/Cmd + Click** to open the file in your editor.
 
+## Lesson Summary
+
+| Lesson | Topic               | What You'll Learn                                                        |
+| ------ | ------------------- | ------------------------------------------------------------------------ |
+| 00     | intro               | Entry points, return types, and C comment rules.                         |
+| 01     | variables           | Declaration, initialization, and const correctness.                      |
+| 02     | types               | Overflow, casting, signed/unsigned pitfalls, and promotions.             |
+| 03     | fixed-width ints    | Portable integer types and limit macros.                                 |
+| 04     | string literals     | Printing and assigning string literals safely.                           |
+| 05     | input parsing       | Safe line reads with fgets and number parsing with sscanf.               |
+| 06     | simple structs      | Defining structs and accessing members.                                  |
+| 07     | enums & typedefs    | Enum usage and typedef for structs.                                      |
+| 08     | control flow        | Switch fallthrough fixes and loop scoping.                               |
+| 09     | error handling      | errno/strerror diagnostics and return codes.                             |
+| 10     | functions           | Prototypes and pass-by-value vs reference patterns.                      |
+| 11     | pointers            | Address-of, dereference, and const pointer qualifiers.                   |
+| 12     | pointer structs     | Dot vs arrow operators with struct pointers.                             |
+| 13     | arrays              | Decay, bounds, checked access, and VLA parameters.                       |
+| 14     | pointer arithmetic  | Pointer increment and distance calculations.                             |
+| 15     | string manipulation | Terminators, safe string APIs, and buffer sizing.                        |
+| 16     | malloc/free         | Heap allocation, leaks, and calloc vs malloc.                            |
+| 17     | realloc             | Resizing patterns and flexible array members.                            |
+| 18     | memory layout       | offsetof, padding math, and struct layout.                               |
+| 19     | double pointers     | Allocating for callers and 2D arrays.                                    |
+| 20     | command line args   | argc/argv basics.                                                        |
+| 21     | macros              | Precedence, side effects, do-while, stringify, token pasting, variadics. |
+| 22     | preprocessor        | Conditional compilation and include guards.                              |
+| 23     | files               | fopen errors and binary/text IO.                                         |
+| 24     | unions & bitfields  | Union memory sharing and bitmasking.                                     |
+| 25     | linkage             | static, extern, and static local persistence.                            |
+| 26     | function pointers   | Callbacks, qsort, and void\* patterns.                                   |
+| 27     | variadic functions  | Building a variadic sum function.                                        |
+| 28     | undefined behavior  | Dangling pointers, use-after-free, and shift UB.                         |
+
 ## Progress
 
 Your progress is saved in `.c-lings-state.txt`. To reset, just delete that file.
