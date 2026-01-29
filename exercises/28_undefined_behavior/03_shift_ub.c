@@ -1,3 +1,4 @@
+#include <stddef.h>
 #include <stdio.h>
 #include "clings.h"
 
@@ -14,6 +15,9 @@ int safe_shift(int value, int shift) {
 int main(void) {
     check_int_msg(safe_shift(1, 3), 8, "1 << 3 should be 8");
     check_int_msg(safe_shift(1, -1), 0, "Negative shifts should be rejected");
+    check_int_msg(safe_shift(1, 31), 0, "bigger than bit width shifts should be rejected");
+    check_int_msg(safe_shift(1, 32), 0, "bigger than bit width shifts should be rejected");
+    check_int_msg(safe_shift(1, 33), 0, "bigger than bit width shifts should be rejected");
 
     return 0;
 }
